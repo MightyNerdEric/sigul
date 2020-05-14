@@ -1,0 +1,11 @@
+[Unit]
+Description=Sigul vault server
+After=network.target
+Documentation=https://fedorahosted.org/sigul/
+
+[Service]
+ExecStart=/usr/sbin/sigul_server -v
+Type=simple
+
+[Install]
+WantedBy=multi-user.target
