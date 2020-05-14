@@ -6,7 +6,7 @@ Release: 1%{?dist}
 License: GPLv2
 
 URL: https://pagure.io/sigul/
-Source0: https://pagure.io/releases/sigul/sigul-%{version}.tar.bz2
+Source0: https://releases.pagure.org/forks/eball/sigul/sigul-%{version}.tar.bz2
 Source1: sigul_bridge.service
 Source2: sigul_server.service
 Source3: sigul.logrotate
@@ -173,6 +173,9 @@ exit 0
 
 
 %changelog
+* Web May 13 2020 Eric Ball <eball@linuxfoundation.org> - 0.208-1
+- Apply Python3 compatibility changes
+
 * Thu May 04 2017 Patrick Uiterwijk <puiterwijk@redhat.com> - 0.207-1
 - Rebase to 0.207
 
